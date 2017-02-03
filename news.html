@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <!-- TODO 兼容IE浏览器 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- TODO 兼容高速浏览模式 -->
+    <meta name="renderer" content="webkit">
+    <!-- TODO 移动设计优先(响应式) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>新闻列表</title>
+    <!-- TODO Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <!--
+   TODO IE8版本之前(6,7,8)不支持HTML5的新标签和CSS3的媒体查询
+   TODO * html5shiv.min.js
+   TODO   专门兼容IE6/7/8版本的HTML5新标签
+   TODO * respond.min.js
+   TODO   专门兼容IE6/7/8版本的CSS3提供的媒体查询
+ -->
+</head>
+
+<body>
+<div class="nav_top col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+    <div class="max_viu">
+        <div class="nav_show">
+            <img src="images/nav.png" alt=""/>
+        </div>
+        <div class="nav_list">
+            <ul>
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="about.html">关于</a>
+                </li>
+                <li class="product">
+                    <a href="javascript:;" class="product_01">项目</a>
+                    <span></span>
+
+                    <div class="product_02" style="display: none">
+                        <p>
+                            <a href="project01.html">马锡五</a>
+                        </p>
+
+                        <p>
+                            <a href="project02.html">佛</a>
+                        </p>
+                        <p>
+                            <a href="project03.html">夜袭珍珠港</a>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a href="news.html" class="background">新闻</a>
+                </li>
+                <li>
+                    <a href="agent.html">文化经纪人</a>
+                </li>
+                <li>
+                    <a href="contact.html">联系</a>
+
+                </li>
+                <li class="product">
+                    <a href="javascript:;" class="product_01_1">中文</a>
+                    <span></span>
+
+                    <div class="product_02_2" style="display: none">
+                        <p>
+                            <a href="index.html">中文</a>
+                        </p>
+
+                        <p>
+                            <a href="#">English</a>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <img src="images/nav_logo.png" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="min_viu">
+        <nav class="navbar navbar-default container nav_tn" role="navigation" style="display: none">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/on_03.png" alt=""/></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">项目<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="project01.html">马锡五</a></li>
+                                <li><a href="project02.html">佛</a></li>
+                                <li><a href="project03.html">夜袭珍珠港</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="news.html">新闻</a></li>
+                        <li><a href="contact.html">联系</a></li>
+                        <li><a href="agent.html">文化经纪人</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">中文<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">中文</a></li>
+                                <li><a href="#">English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="news_list">
+    <div class="container">
+        <div class="col-sm-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="news_tab wow fadeInLeft">
+                <a href="#" class="active_news_tab">ALL</a>
+                <a href="#">公司动态</a>
+                <a href="#">行业新闻</a>
+            </div>
+            <div class="news_t">
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/on_12.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/pro01_19.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/on_10.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/on_12.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/pro01_19.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/on_10.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/pro01_19.png" alt=""/>
+                    </div>
+                </div>
+                <p class="paging text-center">
+                    <a href="javascript:;">上一页</a>
+                    <a href="javascript:;" class="active">1</a>
+                    <a href="javascript:;">2</a>
+                    <a href="javascript:;">3</a>
+                    <a href="javascript:;">4</a>
+                    <a href="javascript:;">5</a>
+                    <a href="javascript:;">6</a>
+                    <a href="javascript:;">7</a>
+                    <a href="javascript:;">下一页</a>
+                </p>
+            </div>
+            <div class="news_t" style="display: none;">
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/on_12.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/on_10.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/on_12.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/pro01_19.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/on_10.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/on_12.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/pro01_19.png" alt=""/>
+                    </div>
+                </div>
+                <p class="paging text-center">
+                    <a href="javascript:;">上一页</a>
+                    <a href="javascript:;" class="active">1</a>
+                    <a href="javascript:;">2</a>
+                    <a href="javascript:;">3</a>
+                    <a href="javascript:;">4</a>
+                    <a href="javascript:;">5</a>
+                    <a href="javascript:;">6</a>
+                    <a href="javascript:;">7</a>
+                    <a href="javascript:;">下一页</a>
+                </p>
+            </div>
+            <div class="news_t" style="display: none;">
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/on_12.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/pro01_19.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/on_10.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/on_10.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/pro01_19.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/pro01_19.png" alt=""/>
+                    </div>
+                </div>
+                <div class="news_show">
+                    <div class="news_text col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInRight">
+                        <div class="news_text_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <p>10-21</p>
+                        </div>
+                        <div class="news_text_2 col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                            <div class="row"><h1><a href="news_show.html">Wow!令人向往的屋顶天堂</a></h1></div>
+                            <div class="row"><p>
+                                屋顶的商机发展充满无限可能，也许打开宝盒发现没有你需要的宝藏，但是知道这几个地方和朋友有更多的谈资也不错...在这里，可以看到世界；看到自己；看到东西方不同文化</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news_img col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+                        <img src="images/on_10.png" alt=""/>
+                    </div>
+                </div>
+                <p class="paging text-center">
+                    <a href="javascript:;">上一页</a>
+                    <a href="javascript:;" class="active">1</a>
+                    <a href="javascript:;">2</a>
+                    <a href="javascript:;">3</a>
+                    <a href="javascript:;">4</a>
+                    <a href="javascript:;">5</a>
+                    <a href="javascript:;">6</a>
+                    <a href="javascript:;">7</a>
+                    <a href="javascript:;">下一页</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="foot wow fadeInDown">
+    <div class="container">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-1">
+            <a href="index.html"><img src="images/demo_50.png" alt=""/></a>
+        </div>
+    </div>
+</div>
+
+<!-- TODO 基于 jQuery 实现的 -->
+<script src="bootstrap/js/jquery-1.11.3.js"></script>
+<script src="bootstrap/js/jquery-ui.js"></script>
+<!-- TODO Bootstrap的插件文件 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+    $('.nav_show').click(
+            function () {
+                if ($('.nav_list').css('display') == 'none') {
+                    $('.nav_list').slideDown(500);
+                } else {
+                    $('.nav_list').slideUp(300);
+                }
+            }
+    );
+    $('.product_01').click(function () {
+        if ($('.product_02').css('display') == 'none') {
+            $('.product_02').slideDown(500);
+        } else {
+            $('.product_02').slideUp(300);
+        }
+    })
+    $('.product_01_1').click(function () {
+        if ($('.product_02_2').css('display') == 'none') {
+            $('.product_02_2').slideDown(500);
+        } else {
+            $('.product_02_2').slideUp(300);
+        }
+    });
+    $(".news_tab a").click(function () {
+        $(".news_tab a").eq($(this).index()).addClass("active_news_tab").siblings().removeClass("active_news_tab")
+        $(".news_t").fadeOut().eq($(this).index()).fadeIn()
+    })
+</script>
+</body>
+
+</html>
